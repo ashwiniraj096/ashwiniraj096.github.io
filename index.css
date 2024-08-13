@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+header {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: white; */
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  margin: 0 50px;
+}
+
+body {
+  background: linear-gradient(to right, #0f52ba, #6a0dad, #a7c7e7);
+  color: white;
+  margin: 35px;
+  font-family: "Lato", sans-serif;
+}
+
+li {
+  list-style: none;
+  padding: 10px;
+  /* color: black; */
+  font-weight: 600;
+  font-size: 18px;
+}
+
+ul {
+  display: flex;
+}
+
+#myName {
+  text-align: center;
+  font-weight: 700;
+
+  /* color: #880e4f; */
+}
+
+.myIntro {
+  font-size: 20px;
+  width: 50%;
+  margin-top: 10%;
+}
+
+.skillsHeading {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.skillsets {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.eachSkill {
+}
+
+.image {
+  width: 64px;
+}
