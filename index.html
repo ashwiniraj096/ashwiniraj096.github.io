@@ -11,15 +11,21 @@
   <body>
     <header>
       <div style="display: flex">
-        <img src="./letter-a-64.png" alt="" class="logo-image" />
-        <h3 id="myName">Ashwini</h3>
+        <img src="./letter-a-64.png" alt="" class="logo-image project-image" />
+        <h3 id="myName" class="animated-text">Ashwini</h3>
       </div>
 
       <div>
         <ul>
-          <li><a href="#myIntro">About</a></li>
-          <li>Projects</li>
-          <li>Contact me!</li>
+          <li class="project-image">
+            <a href="#myIntro">About</a>
+          </li>
+          <li class="project-image">
+            <a href="#Projects">Projects</a>
+          </li>
+          <li class="project-image">
+            <a href="#contactMe">Contact me!</a>
+          </li>
         </ul>
       </div>
     </header>
@@ -34,35 +40,68 @@
         <p class="skillsHeading">Skills Set</p>
         <div class="skillsets">
           <div class="eachSkill">
-            <div class="image"><img src="./js.png" alt="js-icon" /></div>
+            <div class="image project-image">
+              <img src="./js.png" alt="js-icon" />
+            </div>
             <p>JavaScript</p>
           </div>
           <div class="eachSkill">
-            <div class="image">
+            <div class="image project-image">
               <img src="./science.png" alt="react-icon" />
             </div>
             <p>React</p>
           </div>
           <div class="eachSkill">
-            <div class="image">
+            <div class="image project-image">
               <img src="./typescript.png" alt="ts-icon" />
             </div>
             <p>TypeScript</p>
           </div>
           <div class="eachSkill">
-            <div class="image">
+            <div class="image project-image">
               <img src="./node-js.png" alt="node-icon" />
             </div>
             <p>Node JS</p>
           </div>
           <div class="eachSkill">
-            <div class="image">
+            <div class="image project-image">
               <img src="https://redux.js.org/img/redux.svg" alt="redux-icon" />
             </div>
             <p>Redux</p>
           </div>
         </div>
       </div>
+      <div id="Projects">
+        <h1>Projects</h1>
+        <div style="display: flex; justify-content: space-between">
+          <p class="project-desc">
+            ➡ A React-based movie list application built with Redux Toolkit for
+            state management and styled using Tailwind CSS. Includes a user
+            sign-in page for authentication, and hosted on Firebase.
+          </p>
+          <a href="https://bingebox-d6803.web.app/browse" target="_blank">
+            <img
+              src="./binge-box.PNG"
+              alt="binge-box-img"
+              style="width: 600px; border-radius: 12px"
+              class="project-image"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="contactMe">
+      <a href="mailto:ashwini.rajaiah@example.com"
+        ><span class="contact-text">ashwiniraj096@gmail.com</span></a
+      >
+      <a
+        href="https://www.linkedin.com/in/ashwini-rajaiah-884693143/"
+        target="_blank"
+        ><span class="contact-text">LinkedIn</span></a
+      >
+      <a href="https://github.com/ashwiniraj096" target="_blank"
+        ><span class="contact-text">Github</span></a
+      >
     </div>
   </body>
 </html>

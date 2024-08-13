@@ -24,6 +24,7 @@ body {
 }
 
 .main {
+  margin-top: 10%;
 }
 
 a {
@@ -53,7 +54,6 @@ ul {
 #myIntro {
   font-size: 20px;
   width: 50%;
-  margin-top: 10%;
 }
 
 .skillsHeading {
@@ -71,4 +71,59 @@ ul {
 
 .image {
   width: 64px;
+}
+
+#Projects {
+  margin-top: 2%;
+}
+
+#Projects > h1 {
+  margin-top: 2%;
+  text-decoration: underline;
+  text-decoration-color: #a7c7e7;
+}
+
+.project-desc {
+  width: 50%;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.project-image {
+  transition: transform 0.3s ease;
+}
+.project-image:hover {
+  transform: scale(1.1); /* Scales the image up by 10% */
+}
+
+.animated-text {
+  animation: colorChange 3s infinite;
+}
+
+.animated-text:hover {
+  text-decoration: underline;
+}
+@keyframes colorChange {
+  0% {
+    color: #fff;
+  }
+  50% {
+    color: #a7c7e7;
+  }
+  100% {
+    color: rgb(239, 66, 188);
+  }
+}
+
+#contactMe {
+  margin-top: 10%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact-text {
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: palevioletred;
 }
