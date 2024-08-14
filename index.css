@@ -10,14 +10,19 @@ header {
   color: white;
   font-family: "Montserrat", sans-serif;
 }
-
+.scrolled {
+  background: rgba(0, 0, 0, 0.5);
+  padding-left: 20px;
+}
 .logo-image {
-  width: 30px;
-  height: 30px;
+  width: 1.875rem;
+  height: 1.875rem;
   padding-right: 8px;
   margin-top: 16px;
 }
-
+.hamburger-menu {
+  display: none;
+}
 body {
   background: linear-gradient(to right, #0f52ba, #6a0dad, #a7c7e7);
   color: white;
@@ -85,17 +90,23 @@ ul {
   text-decoration: underline;
   text-decoration-color: #a7c7e7;
 }
-
+.projects-container {
+  display: flex;
+  justify-content: space-between;
+}
 .project-desc {
-  width: 50%;
+  /* width: 50%; */
   font-size: 16px;
   font-weight: bold;
 }
-
 .project-image {
+  width: 90%;
+  border-radius: 12px;
+}
+.hover-transition {
   transition: transform 0.3s ease;
 }
-.project-image:hover {
+.hover-transition:hover {
   transform: scale(1.1); /* Scales the image up by 10% */
 }
 
@@ -129,4 +140,31 @@ ul {
   font-weight: bold;
   text-decoration: underline;
   text-decoration-color: palevioletred;
+}
+
+@media (max-width: 768px) {
+  body {
+    margin: 15px;
+  }
+  ul {
+    display: none;
+  }
+  .nav-items {
+    display: flex;
+  }
+  .hamburger-menu {
+    align-self: center;
+  }
+
+  #myIntro {
+    width: 100%;
+  }
+
+  .project-desc {
+    width: 100%;
+  }
+
+  .projects-container {
+    display: block;
+  }
 }

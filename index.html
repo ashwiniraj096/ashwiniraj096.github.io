@@ -11,19 +11,24 @@
   <body>
     <header>
       <div style="display: flex">
-        <img src="./letter-a-64.png" alt="" class="logo-image project-image" />
+        <img
+          src="./letter-a-64.png"
+          alt=""
+          class="logo-image hover-transition"
+        />
         <h3 id="myName" class="animated-text">Ashwini</h3>
       </div>
 
-      <div>
+      <div class="nav-items">
+        <!-- <img src="./menu.png" alt="menu-icon" class="hamburger-menu" /> -->
         <ul>
-          <li class="project-image">
+          <li class="hover-transition">
             <a href="#myIntro">About</a>
           </li>
-          <li class="project-image">
+          <li class="hover-transition">
             <a href="#Projects">Projects</a>
           </li>
-          <li class="project-image">
+          <li class="hover-transition">
             <a href="#contactMe">Contact me!</a>
           </li>
         </ul>
@@ -32,39 +37,38 @@
     <div class="main">
       <div id="myIntro">
         <p>
-          I'm Ashwini, a Senior Software Engineer specializing in UI and
-          frontend development. With over 7 years of experience, I create
-          intuitive and engaging web interfaces that deliver seamless user
-          experiences.
+          I'm Ashwini, a Senior Software Engineer specializing in UI
+          development. With over 7 years of experience, I create intuitive and
+          engaging web interfaces that deliver seamless user experiences.
         </p>
         <p class="skillsHeading">Skills Set</p>
         <div class="skillsets">
           <div class="eachSkill">
-            <div class="image project-image">
+            <div class="image hover-transition">
               <img src="./js.png" alt="js-icon" />
             </div>
             <p>JavaScript</p>
           </div>
           <div class="eachSkill">
-            <div class="image project-image">
+            <div class="image hover-transition">
               <img src="./science.png" alt="react-icon" />
             </div>
             <p>React</p>
           </div>
           <div class="eachSkill">
-            <div class="image project-image">
+            <div class="image hover-transition">
               <img src="./typescript.png" alt="ts-icon" />
             </div>
             <p>TypeScript</p>
           </div>
           <div class="eachSkill">
-            <div class="image project-image">
+            <div class="image hover-transition">
               <img src="./node-js.png" alt="node-icon" />
             </div>
             <p>Node JS</p>
           </div>
           <div class="eachSkill">
-            <div class="image project-image">
+            <div class="image hover-transition">
               <img src="https://redux.js.org/img/redux.svg" alt="redux-icon" />
             </div>
             <p>Redux</p>
@@ -73,7 +77,7 @@
       </div>
       <div id="Projects">
         <h1>Projects</h1>
-        <div style="display: flex; justify-content: space-between">
+        <div class="projects-container">
           <p class="project-desc">
             ➡ A React-based movie list application built with Redux Toolkit for
             state management and styled using Tailwind CSS. Includes a user
@@ -83,8 +87,7 @@
             <img
               src="./binge-box.PNG"
               alt="binge-box-img"
-              style="width: 600px; border-radius: 12px"
-              class="project-image"
+              class="hover-transition project-image"
             />
           </a>
         </div>
@@ -103,5 +106,6 @@
         ><span class="contact-text">Github</span></a
       >
     </div>
+    <script src="./index.js"></script>
   </body>
 </html>
