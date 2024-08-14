@@ -163,8 +163,14 @@ ul {
   .project-desc {
     width: 100%;
   }
-
+  .project-image {
+    width: 100%;
+  }
   .projects-container {
     display: block;
+  }
+
+  .skillsets {
+    grid-template-columns: auto auto auto;
   }
 }
